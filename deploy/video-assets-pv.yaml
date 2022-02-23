@@ -1,0 +1,26 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: video-assets-pv
+spec:
+  storageClassName: standard
+  capacity:
+    storage: 3Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: /data/ms-tv/assets
+
+---
+
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: video-assets-pv-claim
+spec:
+  storageClassName: standard
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 3Gi
