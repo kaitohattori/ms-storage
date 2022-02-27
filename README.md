@@ -5,11 +5,8 @@
 ### volumes
 
 ```
-$ kubectl apply -f deploy/postgres-pv-claim.yaml
 $ kubectl apply -f deploy/postgres-pv.yaml
-$ kubectl apply -f deploy/video-assets-pv-claim.yaml
 $ kubectl apply -f deploy/video-assets-pv.yaml
-$ kubectl apply -f deploy/logs-pv-claim.yaml
 $ kubectl apply -f deploy/logs-pv.yaml
 ```
 
