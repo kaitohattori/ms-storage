@@ -12,7 +12,6 @@ spec:
     path: /data/ms-tv/postgres
 
 ---
-
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:

@@ -1,9 +1,9 @@
 service-in: ## Service in app
-	kubectl apply -f deploy/deployment.yaml
-	kubectl apply -f deploy/service.yaml
 	kubectl apply -f deploy/postgres-pv.yaml
 	kubectl apply -f deploy/video-assets-pv.yaml
 	kubectl apply -f deploy/logs-pv.yaml
+	kubectl apply -f deploy/deployment.yaml
+	kubectl apply -f deploy/service.yaml
 
 service-out: ## Service out app
 	kubectl delete -f deploy/deployment.yaml

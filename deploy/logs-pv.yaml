@@ -12,7 +12,6 @@ spec:
     path: /data/ms-tv/logs
 
 ---
-
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:

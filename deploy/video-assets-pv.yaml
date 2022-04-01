@@ -12,7 +12,6 @@ spec:
     path: /data/ms-tv/assets
 
 ---
-
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
